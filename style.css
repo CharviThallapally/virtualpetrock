@@ -1,0 +1,107 @@
+/* Basic styles for the body and overall container */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #F7F4B4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Centering the pet box */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.pet-box {
+    background: #fff;
+    border-radius: 15px;
+    width: 320px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+    transform-origin: center center;
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Title */
+.pet-box h1 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Style for the pet image */
+#pet-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Bounce effect when pet is fed */
+#pet-img.bounce {
+    transform: scale(1.2);
+}
+
+/* Status text */
+#pet-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#health-status, #hunger-status {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+#health-status span, #hunger-status span {
+    font-weight: bold;
+}
+
+/* Button styles */
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.3s;
+    width: 90%;
+}
+
+button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+/* Notification text */
+#notification {
+    font-size: 16px;
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 15px;
+}
